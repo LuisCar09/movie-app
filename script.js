@@ -12,7 +12,7 @@ const fetchTheMovies = async () => {
         
         const movies =  data.results.map(movie => {
             const specificInfo = {
-                image: `https:image.tmdb.org/t/p/w1280${movie.poster_path}`,
+                image: `https://image.tmdb.org/t/p/w1280${movie.poster_path}`,
                 title: movie.title,
                 overview: movie.overview,
                 rating: movie.vote_average
